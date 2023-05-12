@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChallengeONE: Encriptador de texto</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="img/Logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <main class="container">
+
+        <div class="Logo">
+            <img src="img/Logo.png" alt="Logo Alura">
+        </div>
+        
+        <div class="item-1">
+
+            <textarea name="texto" id="inputTextArea" placeholder="Ingresa el texto aquí"></textarea>
+
+            <div class="warning">
+                <img src="img/advertencia_img.svg">
+                <small>Solo letras minúsculas y sin acentos</small>
+            </div>
+
+            <div class="buttons">
+                <button id="btnEncrypted" type="button" onclick="encrypt()">Encriptar</button>
+                <button id="btnDecrypted" type="button" onclick="decrypt()">Desencriptar</button>
+            </div>
+
+        </div>
+
+        <div class="item-2">
+
+            <div class="result">
+                <img class="banner" src="img/muñeco.png" alt="empty message">
+                <h2 class="banner" >Ningún mensaje fue encontrado</h2>
+                <span class="banner" >Ingresa el texto que desees encriptar o desencriptar.</span>
+                <textarea id="outputTextArea"></textarea>
+                <button id="CopyResult" type="button">Copiar</button>
+            </div>
+
+        </div>
+
+    </main>
+
+    <footer>
+       <div class="credits">
+            <ul>
+                <li><medium>Creado por: <a target="_blank" href="https://github.com/Axel-GN">Hassan Garrido</a></medium></li>
+                <li><medium>Contacto: <a href="https://www.linkedin.com/in/hassan-axel-garrido-nauat-0b9201224/">LinkedIn</a></medium></li>
+            </ul>
+       </div>
+    </footer>
+
+    <script src="index.js"></script>
+
+</body>
+
+</html>
